@@ -33,7 +33,7 @@ body {
 
 .menu li a {
     display: block;
-    padding: 10px;
+    padding: 20px 10px;
     margin-right: 10px;
     color: var(--cor-preta);
     text-decoration: none;
