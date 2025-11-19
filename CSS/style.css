@@ -7,6 +7,12 @@
 
 }
 
+html.textomaior {
+
+    text-transform: uppercase;
+
+}
+
 body {
 
     background: var(--background-cor);
@@ -59,7 +65,7 @@ body {
 
 .titulo {
     font-family: 'Playfair';
-    font-size:  6rem;
+    font-size: 6rem;
     line-height: 1;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -67,51 +73,51 @@ body {
 }
 
 
-.animais-descrição h2{
+.animais-descrição h2 {
     font-family: monospace;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .1em;
     margin-bottom: 1rem;
     color: #e54;
-    
+
 }
 
-.animais-descrição h2::before{
+.animais-descrição h2::before {
     content: "";
     display: inline-block;
     width: 40px;
     height: 10px;
     margin-right: 10px;
-   background-color: var(--backroung-menu);
-   
+    background-color: var(--backroung-menu);
+
 }
 
 .animais-descrição p {
- font-family: Helvetica, sans-serif;
- line-height: 1.2;
- margin-bottom: 1rem;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
-.animais-lista{
+.animais-lista {
     height: 370px;
     overflow-y: scroll;
     grid-column: 2;
 }
 
-.animais-lista::-webkit-scrollbar{
+.animais-lista::-webkit-scrollbar {
     width: 18px;
 
 }
 
-.animais-lista::-webkit-scrollbar-thumb{
+.animais-lista::-webkit-scrollbar-thumb {
     background: var(--backroung-menu);
     border-left: 4px solid var(--background-cor);
     border-right: 4px solid var(--background-cor);
 
 }
 
-.animais-lista::-webkit-scrollbar-track{
+.animais-lista::-webkit-scrollbar-track {
     background: #faf6ed;
 
 }
@@ -120,15 +126,15 @@ body {
     grid-column: 3;
 }
 
-.animais-descrição section{
+.animais-descrição section {
     margin-bottom: 3rem;
 }
 
-.faq-lista{
-    grid-column:  2/4;
+.faq-lista {
+    grid-column: 2/4;
 }
 
-.faq-lista dt{
+.faq-lista dt {
     font-family: monospace;
     font-weight: bold;
     margin-top: 2rem;
@@ -136,29 +142,29 @@ body {
     color: #e54;
 }
 
-.faq-lista dt::before{
+.faq-lista dt::before {
     content: "";
     display: inline-block;
     width: 20px;
     height: 10px;
     margin-right: 10px;
-   background-color: var(--backroung-menu);
-   
+    background-color: var(--backroung-menu);
+
 }
 
-.faq-lista dd{
-    font-family:Arial, Helvetica, sans-serif;
+.faq-lista dd {
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: .5rem;
     margin-left: 2rem;
 
 }
 
-.mapa{
+.mapa {
     grid-column: 2;
 }
 
 
-.dados{
+.dados {
     grid-column: 3;
 }
 
@@ -167,7 +173,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.dados li::before{
+.dados li::before {
     content: "";
     display: inline-block;
     width: 20px;
@@ -175,8 +181,8 @@ body {
     background-color: var(--backroung-menu);
 }
 
-.copy{
-  grid-column: 3/5;  
+.copy {
+    grid-column: 3/5;
 }
 
 .copy p {
@@ -186,31 +192,66 @@ body {
     background: var(--backroung-menu);
 }
 
-@media (max-width: 700px){
+.js-tabmenu {
+    cursor: pointer;
+}
 
-    body{
+.js-tabcontent section {
+    display: none;
+}
+
+.js-tabcontent section.ativo {
+    display: block;
+    animation: show 1s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-20px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d()(0, 0, 0);
+    }
+}
+
+@media (max-width: 700px) {
+
+    body {
         grid-template-columns: 1fr;
     }
-    .menu, .grid-section, .copy{
+
+    .menu,
+    .grid-section,
+    .copy {
         grid-column: 1;
-        
+
     }
-    .grid-section{
+
+    .grid-section {
         grid-template-columns: 100px 1fr;
         gap: 10px;
     }
-    .animais-lista{
+
+    .animais-lista {
         grid-column: 1;
     }
-    .faq-lista, .dados, .mapa{
+
+    .faq-lista,
+    .dados,
+    .mapa {
         grid-column: 1/3;
     }
-    .grid-section h1{
+
+    .grid-section h1 {
         font-size: 3rem;
     }
-    .menu{
+
+    .menu {
         margin-top: 0px;
         display: flex;
     }
-    
+
 }
