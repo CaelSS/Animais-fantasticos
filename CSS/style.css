@@ -196,11 +196,11 @@ body {
     cursor: pointer;
 }
 
-.js-tabcontent section {
+.js .js-tabcontent section {
     display: none;
 }
 
-.js-tabcontent section.ativo {
+.js .js-tabcontent section.ativo {
     display: block;
     animation: show 1s forwards;
 }
