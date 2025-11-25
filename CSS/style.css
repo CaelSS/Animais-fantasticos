@@ -217,6 +217,53 @@ body {
     }
 }
 
+
+
+.js .js-accordion dd {
+    display: none;
+}
+
+.js .js-accordion dt::after {
+    content: '⬎ ';
+    margin-left: 10px;
+}
+
+.js .js-accordion dt.ativo::after {
+    content: '⬏';
+    margin-left: 10px;
+}
+
+.js .js-accordion dd.ativo{
+    display: block;
+    animation: slideDown 1s forwards;
+}
+
+.js .js-accordion dt{
+    cursor: pointer;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0px;
+        /* transform: translate3d(0, -20px, 0); */
+    }
+
+    to {
+        opacity: 1;
+        /* escolho usar max-height  porq ele da a sensacao que o texto ta sendo empurrado pra baixo */
+        max-height: 200px;
+        /* transform: translate3d(0, 0, 0); */
+    }
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px) {
 
     body {
