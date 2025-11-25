@@ -81,7 +81,7 @@ function initScrollSmooth() {
 
 
 
-
+function animatedScroll(){
 const sections = document.querySelectorAll('.js-scrollSmooth');
 const windowHeight = window.innerHeight * 0.6;
 
@@ -98,8 +98,9 @@ function scrollSmooth() {
 }
 
 window.addEventListener('scroll', scrollSmooth)
+}
 
-
+animatedScroll();
 initScrollSmooth();
 initAccordion();
 initTabNav();
