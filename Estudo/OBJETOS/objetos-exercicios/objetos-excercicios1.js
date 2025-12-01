@@ -37,7 +37,10 @@ function Dom(seletor) {
     }
 
     this.removeClass = function () {
-        this.elements.classList.remove('classe');
+        this.elements().forEach((item) => {
+            item.classList.remove('classe');
+
+        });
     }
 
 
