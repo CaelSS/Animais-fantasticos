@@ -85,3 +85,4 @@ transacoes2.forEach((item)=>{
 })
 
 console.log(contagem);
+//teste

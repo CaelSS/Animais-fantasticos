@@ -14,26 +14,15 @@
 //     }
 // }
 
+function Dom(seletor) {
+  this.element = function () {
+    return document.querySelector(seletor);
+  };
 
-
-
-
-
-
-function Dom (seletor)  {
-
-    this.element = function() {
-
-        return document.querySelector(seletor);
-    }
-
-    this.ativar = function() {
-
-       this.element().classList.add('testando');
-
-    }
+  this.ativar = function () {
+    this.element().classList.add("testando");
+  };
 }
 
-
-const li = new Dom('li');
-const ul = new Dom('ul');
+const li = new Dom("li");
+const ul = new Dom("ul");
