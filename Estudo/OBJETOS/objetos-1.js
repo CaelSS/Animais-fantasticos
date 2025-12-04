@@ -20,7 +20,7 @@
 
 
 
-function Dom (seletor) {
+function Dom (seletor)  {
 
     this.element = function() {
 
