@@ -61,4 +61,50 @@ const soma = numeros.reduce((acc, item) =>{
 
     return acc + item;
 
-}, 1)
+}, 1);
+
+
+
+//[].some() ele serve pra dizer se um dos itens esta contido no array, por ex:
+
+const itens = [ 'uva', 'pera', 'gato', 'gado'];
+
+const temIsso = itens.some((itens) => {
+
+    return itens ==='mamão';
+   
+})
+
+ //console.log(temIsso); //false
+
+
+
+
+
+
+
+
+
+//[].find() and [].findIndex() POR EX ->
+
+
+const games = ['mario', 'sonic', 'bmx', 'tony hawks']
+const number = [1, 24, 55, 88];
+
+const ache = games.find((games) =>{
+
+    return games ==='tony hawks';
+
+})
+
+const maior1 = number.find((number)=>number>=2);
+// console.log(maior1);
+
+const ache2 = games.findLastIndex((games) =>{
+
+    return games ==='bmx';
+
+})
+
+// console.log(ache)
+// console.log(ache2)
