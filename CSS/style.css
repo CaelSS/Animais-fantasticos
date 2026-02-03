@@ -192,20 +192,24 @@ body {
     background: var(--backroung-menu);
 }
 
-.js-tabmenu {
+[data-tab='menu'] {
     cursor: pointer;
 }
 
-.js .js-tabcontent section {
+.js [data-tab="content"] section {
     display: none;
 }
 
-.js .js-tabcontent section.ativo {
+.js [data-tab="content"] section.ativo.show-down {
     display: block;
-    animation: show 1s forwards;
+    animation: show-down 1s forwards;
+}
+.js [data-tab="content"] section.ativo.show-right{
+    display: block;
+    animation: show-right 1s forwards;
 }
 
-@keyframes show {
+@keyframes show-right {
     from {
         opacity: 0;
         transform: translate3d(-20px, 0, 0);
@@ -217,38 +221,50 @@ body {
     }
 }
 
+@keyframes show-down {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d()(0, 0, 0);
+    }
+}
 
 
-.js .js-accordion dd {
+
+.js [data-anime="accordion"] dd {
     display: none;
 }
 
-.js .js-accordion dt::after {
+.js [data-anime="accordion"] dt::after {
     content: '⬎ ';
     margin-left: 10px;
 }
 
-.js .js-accordion dt.ativo::after {
+.js [data-anime="accordion"] dt.ativo::after {
     content: '⬏';
     margin-left: 10px;
 }
 
-.js .js-accordion dd.ativo{
+.js [data-anime="accordion"] dd.ativo{
     display: block;
     animation: slideDown 1s forwards;
 }
 
-.js .js-accordion dt{
+.js [data-anime="accordion"] dt{
     cursor: pointer;
 }
 
-.js .js-scrollSmooth{
+.js [data-anime="scroll"]{
 
     opacity: 0;
     transform: translate3d(-30px,0,0);
 }
 
-.js .js-scrollSmooth.ativo{
+.js [data-anime="scroll"].ativo{
     opacity: 1;
     transition: .3s;
     transform: translate3d(0,0,0);
