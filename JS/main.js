@@ -47,61 +47,6 @@ function initAccordion() {
     });
 }
 
-
-function initScrollSmooth() {
-
-    function scrollToSection(event) {
-
-        event.preventDefault();
-        /*capturo a href do link #link*/
-        const href = event.currentTarget.getAttribute('href');
-        /*digo que a seção é o elemento que tenha o ''href''*/
-        const section = document.querySelector(href);
-
-        //funcao com options em objeto//
-        section.scrollIntoView({
-
-            behavior: 'smooth',
-            block: 'start'
-        });
-
-    }
-
-    //evento de botao para os links internos do site//
-    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
-    linksInternos.forEach((link) => {
-
-        link.addEventListener('click', scrollToSection);
-
-    })
-
-
-}
-
-
-
-
-function animatedScroll(){
-const sections = document.querySelectorAll('.js-scrollSmooth');
-const windowHeight = window.innerHeight * 0.6;
-
-function scrollSmooth() {
-
-    sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top - windowHeight;
-        if(sectionTop < 0){
-            console.log('anime ae');
-            section.classList.add('ativo');
-        }
-    })
-
-}
-
-window.addEventListener('scroll', scrollSmooth)
-}
-
-animatedScroll();
-initScrollSmooth();
 initAccordion();
 initTabNav();
 
