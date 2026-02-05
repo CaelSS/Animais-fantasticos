@@ -1,11 +1,11 @@
-import animatedScroll from "./modules/animatedScroll.js";
+import animatedScroll from "./JavaScript/modules/animatedScroll.js";
 animatedScroll();
 
-import initScrollSmooth from "./scrollSmooth.js";
+import initScrollSmooth from "./JavaScript/modules/scrollSmooth.js";
 initScrollSmooth();
 
-import initAccordion from "./modules/accordion.js";
+import initAccordion from "./JavaScript/modules/accordion.js";
 initAccordion();
 
-import initTabNav from "./tabnav.js";
+import initTabNav from "./JavaScript/modules/tabnav.js";
 initTabNav();
