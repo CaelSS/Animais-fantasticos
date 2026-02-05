@@ -26,11 +26,11 @@
             <li><a href="https://github.com/CaelSS" target="_blank"> Dev →</a></li>
         </ul>
     </nav>
-    <section class="grid-section animais js-scrollSmooth.ativo " id="animais">
+    <section class="grid-section animais  " data-anime="scroll" id="animais">
 
         <h1 class="titulo">Animais Fantásticos</h1>
 
-        <ul class="animais-lista js-tabmenu">
+        <ul class="animais-lista " data-tab="menu">
             <li>
                 <img src="../img/imagem1.jpg" >
             </li>
@@ -50,8 +50,8 @@
                 <img src="../img/imagem6.jpg" alt="">
             </li>
         </ul>
-        <div class="animais-descrição js-tabcontent">
-            <section class="ativo">
+        <div class="animais-descrição" data-tab="content">
+            <section data-anime="show-down">
                 <h2 class="subtitulo"> Raposa</h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As
                     raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente
@@ -73,7 +73,7 @@
                     foi exportada por colonos europeus para várias partes do Novo Mundo.</p>
             </section>
 
-            <section>
+            <section data-anime = 'show-right'>
                 <h2 class="subtitulo">Esquilos </h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As
                     raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente
@@ -96,7 +96,7 @@
             </section>
 
 
-            <section>
+            <section data-anime="show-down">
                 <h2 class="subtitulo"> Ursos </h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As
                     raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente
@@ -118,7 +118,7 @@
                     foi exportada por colonos europeus para várias partes do Novo Mundo.</p>
             </section>
 
-            <section>
+            <section data-anime="show-right">
                 <h2 class="subtitulo"> Lobos </h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As
                     raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente
@@ -131,7 +131,7 @@
                
             </section>
 
-            <section>
+            <section data-anime="show-down">
                 <h2 class="subtitulo"> Macacos </h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As
                     raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente
@@ -153,7 +153,7 @@
                     foi exportada por colonos europeus para várias partes do Novo Mundo.</p>
             </section>
 
-            <section>
+            <section data-anime="show-right">
                 <h2 class="subtitulo"> Leões </h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As
                     raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente
@@ -178,9 +178,9 @@
     </section>
 
 
-    <section class="grid-section faq js-scrollSmooth" id="Faq">
+    <section class="grid-section faq j" data-anime="scroll" id="Faq">
         <h1 class="titulo"> FAQ </h1>
-        <dl class="faq-lista js-accordion">
+        <dl class="faq-lista " data-anime="accordion">
             <dt >Qual a idade dos animais</dt>
             <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi qui optio esse facere labore officia?
             </dd>
@@ -204,7 +204,7 @@
     </section>
 
 
-    <section class="grid-section contato js-scrollSmooth" id="contato">
+    <section class="grid-section contato " data-anime="scroll" id="contato">
 
         <h1 class="titulo">Contato</h1>
         <div class="mapa"><img src="../img/mapa.png" alt=""></div>
@@ -228,11 +228,17 @@
     <section class="copy">
         <p> Todos os direitos reservados.</p>
     </section>
+<<<<<<< HEAD
     
     
     <script type="module" src="JS/modules/script.js"></script>
 
     
+=======
+    <script src="JS/efeitosNoDom.js"></script>
+    <!-- <script src="../exercício/trasnversing-e-manipulacao.js"></script> -->
+    <script src="../JS/main.js"></script>
+>>>>>>> 282f15f92d0dfb294c4d049fdbcb1fc63ad6dedd
 </body>
 
 </html>
