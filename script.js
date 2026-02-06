@@ -9,3 +9,6 @@ initAccordion();
 
 import initTabNav from "./JavaScript/modules/tabnav.js";
 initTabNav();
+
+import initModal from "./JavaScript/modules/modal.js";
+initModal();
