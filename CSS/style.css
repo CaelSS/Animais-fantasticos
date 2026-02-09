@@ -1,6 +1,6 @@
 @import url(../CSS/global.css);
 @import url(../CSS/modal.css);
-
+@import url(../CSS/tooltip.css);
 :root {
     --background-cor: #faf6ed;
     --cor-preta: #222;
