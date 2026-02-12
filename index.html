@@ -18,21 +18,23 @@
 
 <body>
     <div class="grid-container">
+        
         <nav class="menu js-menu">
-            <ul>
+           <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul data-menu="list" id="menu">
+                 
                 <li><a href="#animais"> Animais </a></li>
                 <li><a href="#Faq">FaQ</a></li>
-                <li><a href="#contato"> Informações de Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
                 <li><a data-set="abrir" href="#Mensagemcontato"> Enviar uma mensagem</a></li>
 
-                <li data-dropdown=""> <a href="sobre.html">+ links</a>
+                <li data-dropdown> <a href="sobre.html">+ links</a>
                     <ul class="dropDown">
                         <li><a href="https://www.instagram.com/">Instagram</a></li>
                         <li><a href="https://www.linkedin.com/in/cael-santos-santana/">LinkedIn</a></li>
                     </ul>
                 </li>
 
-                <li><a href="https://github.com/CaelSS" target="_blank"> Meu gitHub →</a></li>
             </ul>
         </nav>
         <section class="grid-section animais  " data-anime="scroll.ativo" id="animais">

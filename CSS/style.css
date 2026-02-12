@@ -2,6 +2,7 @@
 @import url(../CSS/modal.css);
 @import url(../CSS/tooltip.css);
 @import url(../CSS/dropdown.css);
+@import url(../CSS/menuMobile.css);
 :root {
     --background-cor: #faf6ed;
     --cor-preta: #222;
@@ -36,6 +37,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     background-color: var(--backroung-menu);
+
 }
 
 .menu ul {
@@ -349,7 +351,6 @@ body {
 
     .menu {
         margin-top: 0px;
-        display: flex;
     }
 
 }
