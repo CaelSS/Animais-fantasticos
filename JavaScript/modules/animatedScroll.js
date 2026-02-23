@@ -7,7 +7,6 @@ function scrollSmooth() {
     sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top - windowHeight;
         if(sectionTop < 0){
-            console.log('anime ae');
             section.classList.add('ativo');
         }
     })

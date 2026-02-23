@@ -29,7 +29,6 @@ export default function initModal() {
 
     }
 
-console.log(botaoAbrir);
 }
 
 
