@@ -24,3 +24,7 @@ initMenuMobile();
 
 import initFuncionamento from "./JavaScript/modules/funcionamento.js"
 initFuncionamento();
+
+
+import initFetchAnimais  from "./JavaScript/modules/fetchAnimais.js";
+initFetchAnimais();
