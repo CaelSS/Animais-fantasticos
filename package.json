@@ -4,8 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "build": "echo build skipped"
   },
   "repository": {
     "type": "git",
