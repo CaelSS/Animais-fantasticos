@@ -43,10 +43,10 @@
 
 function Pessoa(nome) {
 
-   if (!(new.target)){
-      return new Pessoa(nome);
-   }
-   this.nome = nome;
+  if (!(new.target)){
+    return new Pessoa(nome);
+  }
+  this.nome = nome;
 
 }
 

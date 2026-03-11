@@ -23,4 +23,4 @@ console.log(aha2);
 //5º selcionar o ULTIMO p do site
 
 const pe = document.querySelectorAll('p');
-console.log(pe[pe.length-1])
+console.log(pe[pe.length-1]);

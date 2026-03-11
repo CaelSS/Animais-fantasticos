@@ -1,7 +1,7 @@
 const h1 = document.querySelector('h1'); //seleciono o elemento
 
-h1.innerHTML //seria o conteudo do html
-h1.outerHTML //aqui se muda tudo inclusive o tipo do elemento
+h1.innerHTML; //seria o conteudo do html
+h1.outerHTML; //aqui se muda tudo inclusive o tipo do elemento
 
 //ATIVIDADE EXERCICIO ==========================================================//
 
@@ -31,9 +31,8 @@ listaFaq.children[0]; //como é uma nodelist, da pra usar como se fosse array
 listaFaq.children[0].nextElementSibling;
 
 
-
 // 4) Substitua o conteúdo html de .faq pelo de .animais
 
-const animais = document.querySelector('.animais')
+const animais = document.querySelector('.animais');
 
 listaFaq.innerHTML = animais.innerHTML; //vice versa;

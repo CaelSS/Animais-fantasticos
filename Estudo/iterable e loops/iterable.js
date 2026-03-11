@@ -1,26 +1,26 @@
 
 ///////////////////////////////////////////////////////////////
 //              FOR OF                    ///////
-const frutas = ['manga', 'banana', 'uva']
-const frase = 'this is javaScript'
+const frutas = ['manga', 'banana', 'uva'];
+const frase = 'this is javaScript';
 
 
 for(const fruta of frutas){
-    // console.log(fruta);
-    //ele vai imprimir fruta por fruta, tal qual um foreach
+  // console.log(fruta);
+  //ele vai imprimir fruta por fruta, tal qual um foreach
 }
 
 for(const chat of frase){
-    // console.log(chat)
-    //vai imprimir, artigo por artigo da frase. Separando as letras
+  // console.log(chat)
+  //vai imprimir, artigo por artigo da frase. Separando as letras
 }
 
 //spread com for...of
 
-const buttons = document.querySelectorAll('button')
+const buttons = document.querySelectorAll('button');
 
 for (const btn of buttons){
-    btn.style.background = 'blue';
+  btn.style.background = 'blue';
 }
 
 // console.log(...buttons)
@@ -32,23 +32,23 @@ for (const btn of buttons){
 
 const cael = {
 
-    idade: 30,
-    cor: 'preto negrasso',
-    picaTam: '3cm'
+  idade: 30,
+  cor: 'preto negrasso',
+  picaTam: '3cm'
 
-}
+};
 
 
 for(const key in cael){
-    // console.log(key, cael[key])
+  // console.log(key, cael[key])
 }
 
 buttons.forEach((e) =>{
-    const estilos = getComputedStyle(e);
-    for(const style in estilos){
-        // console.log(`${style}: ${estilos[style]}`)
-    }
-})
+  const estilos = getComputedStyle(e);
+  for(const style in estilos){
+    // console.log(`${style}: ${estilos[style]}`)
+  }
+});
 
 
 // Crie 4 li's na página
@@ -59,7 +59,7 @@ buttons.forEach((e) =>{
 const lis = document.querySelectorAll('li');
 
 for(const classes of lis){
-    classes.classList.add('opa');
+  classes.classList.add('opa');
 }
 
 // console.log(lis)
@@ -70,5 +70,5 @@ for(const classes of lis){
 
 
 for(const lista in window){
-    console.log(lista+ ':' +window[lista])
+  console.log(lista+ ':' +window[lista]);
 }

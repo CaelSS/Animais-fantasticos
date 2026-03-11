@@ -1,4 +1,4 @@
-import outsideClick from './outside-click.js'
+import outsideClick from './outside-click.js';
 
 export default function dropDown() {
 
@@ -16,9 +16,9 @@ export default function dropDown() {
     this.classList.add('activated');
 
     outsideClick(this, () => {
-      this.classList.remove('activated')
+      this.classList.remove('activated');
     });
   }
 
- 
+
 }

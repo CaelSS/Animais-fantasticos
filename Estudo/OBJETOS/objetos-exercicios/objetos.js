@@ -3,13 +3,13 @@
 /*um construtor generico para um veiculo que contenha marca e preço do veiculo*/
 function Veiculo(marca, valor){
 
-    /*isso aqui é a mesma coisa que dizer ''veiculo.marca = marca''. O this é auto-direcional ''este'' */
-    
-    const taxa = 0.1;
-    const precoFinal = valor * taxa;
+  /*isso aqui é a mesma coisa que dizer ''veiculo.marca = marca''. O this é auto-direcional ''este'' */
 
-    this.marca = marca;
-    this.preco = precoFinal + valor;
+  const taxa = 0.1;
+  const precoFinal = valor * taxa;
+
+  this.marca = marca;
+  this.preco = precoFinal + valor;
 
 }
 

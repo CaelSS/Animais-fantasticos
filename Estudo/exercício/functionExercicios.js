@@ -1,7 +1,6 @@
 //EXERCICIOS DO ESTUDO SOBRE FUNCAO
 
 
-
 // Retorne a soma total de caracteres dos
 // parágrafos acima utilizando reduce
 const paragrafos = document.querySelectorAll('section p');
@@ -13,10 +12,9 @@ const soma = arrayDeParagrafos.reduce((acc, item) => acc + item.innerText.length
 
 const somaTotal = Array.prototype.reduce.call(paragrafos, (acc, item)=> {
 
-    return acc + item.innerText.length;
+  return acc + item.innerText.length;
 
 }, 0);
-
 
 
 // Crie uma função que retorne novos elementos
@@ -25,11 +23,11 @@ const somaTotal = Array.prototype.reduce.call(paragrafos, (acc, item)=> {
 
 function criarElemento(tag, classe, textoInner) {
 
-    const elemento = document.createElement(tag);
-    classe ? elemento.className = classe : ''; //se classe existe dale, se nao existe nao retorna undefined
-    textoInner? elemento.innerText = textoInner : '';
+  const elemento = document.createElement(tag);
+  classe ? elemento.className = classe : ''; //se classe existe dale, se nao existe nao retorna undefined
+  textoInner? elemento.innerText = textoInner : '';
 
-    return document.body.prepend(elemento);
+  return document.body.prepend(elemento);
 
 }
 
@@ -40,7 +38,7 @@ function criarElemento(tag, classe, textoInner) {
 
 
 const h1Titulo = criarElemento.bind(null, 'h1', 'titulo');
-//no caso ele ja tem criado o h1 (elemento) e a classe ''titulo''. 
+//no caso ele ja tem criado o h1 (elemento) e a classe ''titulo''.
 //utilizou o bind pra nao precisar reescrevr tudo e copiar a funcao com o this do novo objeto
 
 

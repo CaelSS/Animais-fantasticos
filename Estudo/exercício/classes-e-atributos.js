@@ -2,8 +2,8 @@
 
 const ativo = document.querySelectorAll('.menu a ');
 ativo.forEach((item)=>{
-    item.classList.add('ativo');
-})
+  item.classList.add('ativo');
+});
 
 console.log(ativo);
 
@@ -11,7 +11,7 @@ console.log(ativo);
 
 //aqui eu removo
 ativo.forEach((item)=> {
- item.classList.remove('ativo');
+  item.classList.remove('ativo');
 
 });
 
@@ -25,14 +25,14 @@ const imagens = document.querySelectorAll('img');
 console.log(imagens);
 
 imagens.forEach((item) => {
-    
-    if(item.hasAttribute('alt')){
-        console.log('dale')
-    }else{
-        console.log("nao dale")
-    }
-   
-    
+
+  if(item.hasAttribute('alt')){
+    console.log('dale');
+  }else{
+    console.log("nao dale");
+  }
+
+
 });
 
 // Modifique o href do link externo no menu
@@ -44,33 +44,9 @@ link.setAttribute('href', 'https://www.google.com');
 console.log(link.getAttribute('href'));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const menu = document.querySelector('.menu');
 // menu.classList.add('ativo'); //adiciono uma classe chamada ''ativo'' na classe do elemento menu.
 // console.log(menu.classList);
-
 
 
 // const animais = document.querySelector('.animais');

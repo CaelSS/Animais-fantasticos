@@ -1,8 +1,8 @@
 // PARAMETROS //
 //reserva um valor padrao casop nao venha o valor no argumento na chamativa da funcao
 function perimetro (lado, qtdLados = 4){
-    // qtdLados = qtdLados || 4;
-    return lado * qtdLados;
+  // qtdLados = qtdLados || 4;
+  return lado * qtdLados;
 }
 
 // console.log(perimetro(10, 3))
@@ -10,8 +10,8 @@ function perimetro (lado, qtdLados = 4){
 
 
 function perimetro2 (lado1, qtdLados1 = 4){
-    // qtdLados = qtdLados || 4;
-    return lado1 * qtdLados1;
+  // qtdLados = qtdLados || 4;
+  return lado1 * qtdLados1;
 }
 
 // console.log(perimetro2(10, 3))
@@ -23,19 +23,19 @@ function perimetro2 (lado1, qtdLados1 = 4){
 
 
 function reste(a, b ,...listArgs){
-    console.log(arguments);
+  console.log(arguments);
 
-    listArgs.forEach(item=> console.log(item));
-    return a + b;
+  listArgs.forEach(item=> console.log(item));
+  return a + b;
 }
 
 ////////////////////////////////////////////////////////////////
 
 function sorteio(premio, ...ganhadores){
 
-    ganhadores.forEach(ganhadores =>{
-        console.log(`${ganhadores} ganhou um ${premio}`);
-    })
+  ganhadores.forEach(ganhadores =>{
+    console.log(`${ganhadores} ganhou um ${premio}`);
+  });
 
 }
 
@@ -45,11 +45,10 @@ function sorteio(premio, ...ganhadores){
 
 // SPREAD //
 
-const jogos = ['e33', 'elden', 'sonic']
+const jogos = ['e33', 'elden', 'sonic'];
 const controles = ['bom', 'perfeito', 'tenso'];
 // const comidas = [...controles, ...jogos]
 // console.log(comidas);
-
 
 
 /////////////////////////////////////////////////////////////////////
@@ -59,13 +58,13 @@ const controles = ['bom', 'perfeito', 'tenso'];
 // Reescreva a função utilizando
 // valores iniciais de parâmetros com ES6
 function createButton(background ='blue', color='red') {
-  
+
   const buttonElement = document.createElement('button');
   buttonElement.style.background = background;
   buttonElement.style.color = background;
 
   return buttonElement;
-} 
+}
 
 const redButton = createButton('red');
 
@@ -74,4 +73,4 @@ const frutas = ['Banana', 'Uva', 'Morango'];
 const comidas = ['Pizza', 'Batata'];
 
 comidas.push(...frutas);
-console.log(comidas)
+console.log(comidas);

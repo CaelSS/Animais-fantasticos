@@ -12,45 +12,21 @@ paragrafos.forEach((item) => console.log(item.innerText)); //utilizar o innertex
 
 const imgs = document.querySelectorAll('img');
 //pra correção abaixo nos argumentos quando for mais de um tem que ter o parentese. Entao eu adicionei o parenteses.
-imgs.forEach((item, index) => { console.log(item)});
+imgs.forEach((item, index) => { console.log(item);});
 
 
 //outro ex:
 //adicionei os parenteses tbm. Mesmo que nao tenha argumento, ainda é preciso ter o parenteses.
 let i = 0;
 imgs.forEach (() =>{
-    console.log(i++);
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  console.log(i++);
+});
 
 
 // const imgs = document.querySelectorAll('img');
 
 
-//  //isso aqui lê-se ''para cada item (forEach traducao literal). 
+//  //isso aqui lê-se ''para cada item (forEach traducao literal).
 //  // dentro da funcao os argumentos sao 'Item', 'index' (que seria a posicao), e ooutro argumento seria o array completo dos eelementos dentro da seleção.
 // imgs.forEach(function(item, index, arrayDosobjetos){
 

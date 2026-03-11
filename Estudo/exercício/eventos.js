@@ -10,22 +10,22 @@
 const linksInternos = document.querySelectorAll('a[href^="#"]');
 
 function handleLink(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    linksInternos.forEach((link) => {
-        link.classList.remove("ativo");
+  linksInternos.forEach((link) => {
+    link.classList.remove("ativo");
 
-    })
-    event.currentTarget.classList.add("ativo");
+  });
+  event.currentTarget.classList.add("ativo");
 
 
 }
 
 linksInternos.forEach((link) => {
 
-    link.addEventListener('click', handleLink);
+  link.addEventListener('click', handleLink);
 
-})
+});
 
 
 //--------------------------------------------------------------------------
@@ -73,32 +73,15 @@ linksInternos.forEach((link) => {
 
 function handleKeyboard(event){
 
-    if(event.key === 't'){
-        console.log('clicou t')
-      document.documentElement.classList.toggle('textomaior');
-    }
- 
+  if(event.key === 't'){
+    console.log('clicou t');
+    document.documentElement.classList.toggle('textomaior');
+  }
+
 }
 
 
 window.addEventListener('keydown', handleKeyboard);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // window.addEventListener('resize', function(){

@@ -13,9 +13,9 @@ const objetosDoCurso = Arrayinfos.map((cursos) => {
     aulas,
     horas
 
-  }
+  };
 
-})
+});
 
 // console.log(objetosDoCurso);
 
@@ -31,15 +31,14 @@ const maiores = numeros.filter((numero) => numero > 100);
 //-------------------------------------------------------------------------------------------------------------------------------------------//
 
 
-
 // 2 ª) - Verifique se Baixo faz parte da lista de instrumentos e retorne true
-const instrumentos = ['Guitarra', 'Baixo', 'Bateria', 'Teclado']
+const instrumentos = ['Guitarra', 'Baixo', 'Bateria', 'Teclado'];
 
 const trueOrFalse = instrumentos.some((item) => {
 
   return item === 'Baixo';
 
-})
+});
 
 // console.log(trueOrFalse); //true
 
@@ -67,13 +66,13 @@ const compras = [
     item: 'Quejo',
     preco: 'R$ 10,60'
   }
-]
+];
 
 
 const valores = compras.reduce((acumulador, item) => {
-  const limpaPreco = +item.preco.replace("R$", "").replace(",", '.')
+  const limpaPreco = +item.preco.replace("R$", "").replace(",", '.');
   return acumulador + limpaPreco;
- 
-}, 0)
+
+}, 0);
 
 console.log(valores); //49

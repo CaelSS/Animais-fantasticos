@@ -16,13 +16,13 @@ initModal();
 import initTooltip from "./JavaScript/modules/tooltip.js";
 initTooltip();
 
-import initDropDown from "./JavaScript/modules/dropDown.js"
+import initDropDown from "./JavaScript/modules/dropDown.js";
 initDropDown();
 
-import initMenuMobile from "./JavaScript/modules/menu-mobile.js"
+import initMenuMobile from "./JavaScript/modules/menu-mobile.js";
 initMenuMobile();
 
-import initFuncionamento from "./JavaScript/modules/funcionamento.js"
+import initFuncionamento from "./JavaScript/modules/funcionamento.js";
 initFuncionamento();
 
 

@@ -9,12 +9,11 @@ primeira.offsetTop;
 //resposta 173
 
 
-
 // Retorne a soma da largura de todas as imagens
 let soma = 0;
 primeiraImagem.forEach((item) => {
-    soma += item.width;
-})
+  soma += item.width;
+});
 
 
 // Verifique se os links da página possuem
@@ -23,17 +22,16 @@ primeiraImagem.forEach((item) => {
 
 const link = document.querySelectorAll('a');
 link.forEach((item)=>{
-    const linkLargura = item.offsetWidth;
-    const linkAltura = item.offsetHeight;
-   
- if(linkAltura >= 48 && linkLargura >= 48){
-    console.log(link, "eita desgraça");
- }else{
-    console.log(link, 'rapaz, deu bom');
- }
+  const linkLargura = item.offsetWidth;
+  const linkAltura = item.offsetHeight;
 
-})
- 
+  if(linkAltura >= 48 && linkLargura >= 48){
+    console.log(link, "eita desgraça");
+  }else{
+    console.log(link, 'rapaz, deu bom');
+  }
+
+});
 
 
 // Se o browser for menor que 720px,
@@ -42,36 +40,12 @@ link.forEach((item)=>{
 
 const mobile = window.matchMedia('(max-width: 720px)').matches;
 const menu = document.querySelector('.menu');
-    console.log(!!mobile)
+console.log(!!mobile);
 
 if(mobile){
-    
-    menu.classList.add('menu-mobile');
+
+  menu.classList.add('menu-mobile');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // //pego o tamanho da altura do elemento esecolhido

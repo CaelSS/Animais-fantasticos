@@ -2,12 +2,12 @@
 
 function Pessoa(nome, idade) {
 
-    this.nome = nome;
-    this.idade = idade;
+  this.nome = nome;
+  this.idade = idade;
 
-    this.andar = function () {
-        console.log(this.nome + " andou");
-    }
+  this.andar = function () {
+    console.log(this.nome + " andou");
+  };
 
 }
 
@@ -22,26 +22,26 @@ propriedades e métodos:
 
 function Dom(seletor) {
 
-    this.elements = function () {
+  this.elements = function () {
 
-        return document.querySelectorAll(seletor);
+    return document.querySelectorAll(seletor);
 
-    }
+  };
 
-    this.addClasse = function () {
+  this.addClasse = function () {
 
-        this.elements().forEach((item) => {
-            item.classList.add('classe');
+    this.elements().forEach((item) => {
+      item.classList.add('classe');
 
-        });
-    }
+    });
+  };
 
-    this.removeClass = function () {
-        this.elements().forEach((item) => {
-            item.classList.remove('classe');
+  this.removeClass = function () {
+    this.elements().forEach((item) => {
+      item.classList.remove('classe');
 
-        });
-    }
+    });
+  };
 
 
 }

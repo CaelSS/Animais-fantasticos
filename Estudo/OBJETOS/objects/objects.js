@@ -2,30 +2,30 @@
 
 const carro = {
 
-    marca: 'Marca',
-    nome: 'fusca',
-    ano: '1985',
+  marca: 'Marca',
+  nome: 'fusca',
+  ano: '1985',
 
-    init(marca) {
+  init(marca) {
 
-        this.marca = marca;
-        return this;
+    this.marca = marca;
+    return this;
 
-    },
+  },
 
-    acelera() {
+  acelera() {
 
-        return this.marca + " Acelerou que só!";
-    },
+    return this.marca + " Acelerou que só!";
+  },
 
-    buzina() {
+  buzina() {
 
-        return this.marca + ' buzina também!'
+    return this.marca + ' buzina também!';
 
-    }
+  }
 
 
-}
+};
 
 const palio = Object.create(carro).init('Palio');
 
@@ -36,34 +36,34 @@ const palio = Object.create(carro).init('Palio');
 
 const funcoesDeAutomovel = {
 
-    acelerar() {
-        return 'acelerou'
-    },
+  acelerar() {
+    return 'acelerou';
+  },
 
-    rodas() {
-        return 'esse tem 4';
-    },
+  rodas() {
+    return 'esse tem 4';
+  },
 
-    rodas2() {
-        return 'esse tem 2';
-    }
+  rodas2() {
+    return 'esse tem 2';
+  }
 
 
-}
+};
 
 const moto = {
 
-    marca: 'honda',
-    capacete: true
+  marca: 'honda',
+  capacete: true
 
-}
+};
 
 const carro2 = {
 
-    marca: 'ford',
-    capacete: false
+  marca: 'ford',
+  capacete: false
 
-}
+};
 
 //o objeto carro agora possui os metodos dentro do constutor funcoesDeAutomovel
 Object.assign(carro2, funcoesDeAutomovel);
@@ -75,25 +75,25 @@ Object.assign(carro2, funcoesDeAutomovel);
 
 
 const bike = {
-    //tenho o objeto
-}
+  //tenho o objeto
+};
 
 Object.defineProperties = {
 
-    rodas: {
+  rodas: {
 
-        get() {
-            return this._rodas;
-        },
+    get() {
+      return this._rodas;
+    },
 
-        set(valor) {
-            this._rodas;
-
-        }
+    set(valor) {
+      this._rodas;
 
     }
 
-}
+  }
+
+};
 
 //por exemplo, eu quero dizer que esse ojbeto bike tem 2 rodas
 //set()ei as rodas igual a 2

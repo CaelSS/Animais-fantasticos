@@ -52,7 +52,7 @@ console.log(nomes.slice(0, -2)); //aqui ele vai TIRAR os ultimos 2
 
 const nomeCompleto = "cael santos santana";
 
-//pega o primeiro que achar   
+//pega o primeiro que achar
 console.log(nomeCompleto.indexOf("a"));
 
 //pega o ultimo
@@ -91,7 +91,7 @@ const frase = 'cael quer usar virugla em tudo';
 console.log(frase.replace(/[ ]+/g, ', '));
 
 
-const pc = 'o pc custa 5.000 reais'
+const pc = 'o pc custa 5.000 reais';
 
 console.log(pc.replace('.', ','));
 
@@ -113,7 +113,7 @@ const novoHtml = arrayHtml.join('section');
 
 
 //---------------------------------------------------------------remove os espaços do inicio e do fim//
-const valor = '  R$ 23.00   ' 
+const valor = '  R$ 23.00   ';
 valor.trim(); // 'R$ 23.00'
 valor.trimStart(); // 'R$ 23.00   '
 valor.trimEnd(); // '  R$ 23.00'

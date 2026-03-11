@@ -1,55 +1,54 @@
 
 class Button {
 
-    constructor(texto, background){
-        this.text = texto;
-        this.backgrounmd = background;
-    }
+  constructor(texto, background){
+    this.text = texto;
+    this.backgrounmd = background;
+  }
 
-    element(){
+  element(){
 
-        const buttonElement = document.createElement('button');
-        buttonElement.innerText = this.text;
-        buttonElement.style.background = this.backgrounmd;
-        return buttonElement;
-        
+    const buttonElement = document.createElement('button');
+    buttonElement.innerText = this.text;
+    buttonElement.style.background = this.backgrounmd;
+    return buttonElement;
 
-    }
 
-    appendTo(target){
-        const elementarget = document.querySelector(target);
-        elementarget.appendChild(this.element());
-        return elementarget;
+  }
 
-    }
+  appendTo(target){
+    const elementarget = document.querySelector(target);
+    elementarget.appendChild(this.element());
+    return elementarget;
 
-    static creatButton(texto, cor){
-        return new Button(texto, cor)
-    }
+  }
+
+  static creatButton(texto, cor){
+    return new Button(texto, cor);
+  }
 
 }
 
 // const arrayBotoes = [ '1, blue', '2, gray', '3, red']
 
 // arrayBotoes.forEach(botao =>{
-    
+
 //         const [numero, cor] = botao.split(',');
 //         const botoes = new Button(numero, cor);
 //         botoes.appendTo('body');
 //         console.log(botoes)
-        
-// })
 
+// })
 
 
 const botaoAzul = new Button('botao', 'orange');
 console.log(botaoAzul.appendTo('body'));
-console.log(botaoAzul)
+console.log(botaoAzul);
 
 
 const botaoblue = Button.creatButton('porra');
 botaoblue.appendTo('body');
-console.log(botaoblue)
+console.log(botaoblue);
 
 // class Button{
 
@@ -79,29 +78,8 @@ console.log(botaoblue)
 // console.log(botao1.options)
 
 
-
 // const botao2 = Button.creatBackground('sair', 'blue');
 // console.log(botao2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // //isso aqui era usado no java antigo ===>>>

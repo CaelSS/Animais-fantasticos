@@ -27,33 +27,32 @@ const transacoes = [
 
 //resposta =>
 
-    let somaRecebido = 0;
-    let somaTaxa = 0;
-    let valorString;
-    let conv;
+let somaRecebido = 0;
+let somaTaxa = 0;
+let valorString;
+let conv;
 
-    transacoes.forEach((item)=>{
-
-
-        if(item.descricao.includes('Taxa')){
-            valorString = item.valor.replace('R$', '');
-            somaTaxa = somaTaxa + (+valorString);                
-        } 
-
-        else{
-
-    
-            somaRecebido += (+valorString);
-
-        }
-        
-    })
-    console.log(`o valor de recibos é:  ${somaRecebido}`)
-    console.log(`O valor das taxas é: ${somaTaxa}`)
+transacoes.forEach((item)=>{
 
 
+  if(item.descricao.includes('Taxa')){
+    valorString = item.valor.replace('R$', '');
+    somaTaxa += (+valorString);
+  }
 
-    //trocar span por a
+  else{
+
+
+    somaRecebido += (+valorString);
+
+  }
+
+});
+console.log(`o valor de recibos é:  ${somaRecebido}`);
+console.log(`O valor das taxas é: ${somaTaxa}`);
+
+
+//trocar span por a
 
 const html = `<ul>
                 <li><span>Sobre</span></li>
@@ -61,8 +60,7 @@ const html = `<ul>
                 <li><span>Contato</span></li>
               </ul>`;
 
- const novohtml = html.split('span').join('a');
-
+const novohtml = html.split('span').join('a');
 
 
 //  // Retorne o último caracter da frase
@@ -78,11 +76,11 @@ const transacoes2 = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'd
 let contagem = 0;
 transacoes2.forEach((item)=>{
 
-   item = item.toLowerCase().trim();
-    item.startsWith('taxa')?   contagem+=1 : contagem += 0;
+  item = item.toLowerCase().trim();
+  item.startsWith('taxa')?   contagem+=1 : contagem += 0;
 
 
-})
+});
 
 console.log(contagem);
 //teste
