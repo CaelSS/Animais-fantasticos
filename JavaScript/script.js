@@ -1,8 +1,9 @@
 import animatedScroll from "./modules/animatedScroll.js";
 animatedScroll();
 
-import initScrollSmooth from "./modules/scrollSmooth.js";
-initScrollSmooth();
+import ScrollSuave from "./modules/scrollSmooth.js";
+const scrollSuave = new ScrollSuave('a[href^="#"]');
+scrollSuave.init();
 
 import initAccordion from "./modules/accordion.js";
 initAccordion();

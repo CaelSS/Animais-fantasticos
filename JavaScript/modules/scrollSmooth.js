@@ -1,21 +1,31 @@
-export default function initScrollSmooth() {
-  function scrollToSection(event) {
-    event.preventDefault();
-    /*capturo a href do link #link*/
-    const href = event.currentTarget.getAttribute("href");
-    /*digo que a seção é o elemento que tenha o ''href''*/
-    const section = document.querySelector(href);
+export default class ScrollSuave {
+  constructor(links, options) {
+    this.linksInternos = document.querySelectorAll(links);
+    if (this.options === undefined) {
+      this.options = { behavior: "smooth", block: "start" };
+    } else {
+      this.options = options;
+    }
+    this.scrollToSection = this.scrollToSection.bind(this);
+  }
 
-    //funcao com options em objeto//
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+  scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+    section.scrollIntoView(this.options);
+  }
+
+  addLinkEvent() {
+    this.linksInternos.forEach((link) => {
+      link.addEventListener("click", this.scrollToSection);
     });
   }
 
-  //evento de botao para os links internos do site//
-  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
-  linksInternos.forEach((link) => {
-    link.addEventListener("click", scrollToSection);
-  });
+  init() {
+    if (this.linksInternos.lentgh) {
+      this.addLinkEvent();
+    }
+    return this;
+  }
 }
