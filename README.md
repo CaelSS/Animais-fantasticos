@@ -9,12 +9,15 @@ Nele, utilizo de:
 * Rest API
 * Consumo de API
 * modulos
+* versionamento com git e github
 * e mais conceitos basico da linguagem de marcacao e de programacao js
 
 
 
 
 
-Primeiro para rodar o projeto, voce precisa clonar o respositorio,
-Com o respositório aberto baixe as dependencias (npm i),
-Depois digite no console 'npm run build' e clique no link localHost do seu computador informado no console.
+Primeiro => para rodar o projeto, voce precisa clonar o respositorio!
+
+Com o respositório aberto baixe as dependencias (npm i)!
+
+Depois digite no console 'npm run build' e clique no link localHost do seu computador informado no console!
