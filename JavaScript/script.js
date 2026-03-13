@@ -5,8 +5,9 @@ import ScrollSuave from "./modules/scrollSmooth.js";
 const scrollSuave = new ScrollSuave('a[href^="#"]');
 scrollSuave.init();
 
-import initAccordion from "./modules/accordion.js";
-initAccordion();
+import Accordion from "./modules/accordion.js";
+const accordion = new Accordion('[data-anime="accordion"] dt');
+accordion.init();
 
 import initTabNav from "./modules/tabnav.js";
 initTabNav();
@@ -26,6 +27,5 @@ initMenuMobile();
 import initFuncionamento from "./modules/funcionamento.js";
 initFuncionamento();
 
-
-import initFetchAnimais  from "./modules/fetchAnimais.js";
+import initFetchAnimais from "./modules/fetchAnimais.js";
 initFetchAnimais();
