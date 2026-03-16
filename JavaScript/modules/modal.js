@@ -23,5 +23,3 @@ export default function initModal() {
     modalMensagem.addEventListener("click", clickForaModal);
   }
 }
-
-///to na branch do modal
