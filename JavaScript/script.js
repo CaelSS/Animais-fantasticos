@@ -9,8 +9,9 @@ import Accordion from "./modules/accordion.js";
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
 
-import initTabNav from "./modules/tabnav.js";
-initTabNav();
+import TabNav from "./modules/tabnav.js";
+const tabnav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+tabnav.init();
 
 import initModal from "./modules/modal.js";
 initModal();
