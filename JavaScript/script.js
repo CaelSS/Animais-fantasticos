@@ -13,8 +13,10 @@ import TabNav from "./modules/tabnav.js";
 const tabnav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
 tabnav.init();
 
-import initModal from "./modules/modal.js";
-initModal();
+import Modal from "./modules/modal.js";
+const modal = new Modal('[data-set="abrir"]', ".modal .fechar", ".modal-container");
+modal.init();
+
 
 import initTooltip from "./modules/tooltip.js";
 initTooltip();
