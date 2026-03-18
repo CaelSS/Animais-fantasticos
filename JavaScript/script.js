@@ -18,8 +18,9 @@ const modal = new Modal('[data-set="abrir"]', ".modal .fechar", ".modal-containe
 modal.init();
 
 
-import initTooltip from "./modules/tooltip.js";
-initTooltip();
+import tooltip from "./modules/tooltip.js";
+const tooltips = new tooltip("[data-tooltip]");
+tooltips.init();
 
 import initDropDown from "./modules/dropDown.js";
 initDropDown();
