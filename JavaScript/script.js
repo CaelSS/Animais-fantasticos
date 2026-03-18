@@ -1,5 +1,6 @@
-import animatedScroll from "./modules/animatedScroll.js";
-animatedScroll();
+import AnimatedScroll from "./modules/animatedScroll.js";
+const animationScroll = new AnimatedScroll('[data-anime="scroll"]');
+animationScroll.init();
 
 import ScrollSuave from "./modules/scrollSmooth.js";
 const scrollSuave = new ScrollSuave('a[href^="#"]');
