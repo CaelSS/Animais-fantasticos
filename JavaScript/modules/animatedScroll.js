@@ -1,15 +1,25 @@
-export default function animatedScroll() {
-  const sections = document.querySelectorAll('[data-anime="scroll"]');
-  const windowHeight = window.innerHeight * 0.6;
+export default class AnimatedScroll {
+  constructor(section) {
+    this.sections = document.querySelectorAll(section);
+    this.windowHeight = window.innerHeight * 0.6;
+    //bind pra nao referenciar errado
+    this.scrollSmooth = this.scrollSmooth.bind(this);
+  }
 
-  function scrollSmooth() {
-    sections.forEach((section) => {
-      const sectionTop = section.getBoundingClientRect().top - windowHeight;
+  scrollSmooth() {
+    this.sections.forEach((section) => {
+      const sectionTop =
+        section.getBoundingClientRect().top - this.windowHeight;
       if (sectionTop < 0) {
         section.classList.add("ativo");
       }
     });
   }
 
-  window.addEventListener("scroll", scrollSmooth);
+  init() {
+    if (this.sections.length) {
+      this.scrollSmooth();
+      window.addEventListener("scroll", this.scrollSmooth);
+    }
+  }
 }
