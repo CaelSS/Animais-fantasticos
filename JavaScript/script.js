@@ -31,5 +31,6 @@ initMenuMobile();
 import initFuncionamento from "./modules/funcionamento.js";
 initFuncionamento();
 
-import initFetchAnimais from "./modules/fetchAnimais.js";
-initFetchAnimais();
+import FetchAnimais from "./modules/fetchAnimais.js";
+const fetchAnimais = new FetchAnimais();
+fetchAnimais.init();

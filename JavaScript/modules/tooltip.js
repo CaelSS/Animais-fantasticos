@@ -18,7 +18,7 @@ export default class ToolTip {
   }
 
   //cria a tooltip e coloca na propriedade, adicionando os eventos
-  
+
   onMouseOver(event) {
     this.criarToolTipBox(event.currentTarget);
 
