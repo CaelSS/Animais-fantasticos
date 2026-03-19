@@ -23,8 +23,9 @@ import tooltip from "./modules/tooltip.js";
 const tooltips = new tooltip("[data-tooltip]");
 tooltips.init();
 
-import initDropDown from "./modules/dropDown.js";
-initDropDown();
+import DropDown from "./modules/dropDown.js";
+const menu = new DropDown('[data-dropdown]');
+menu.init();
 
 import initMenuMobile from "./modules/menu-mobile.js";
 initMenuMobile();
