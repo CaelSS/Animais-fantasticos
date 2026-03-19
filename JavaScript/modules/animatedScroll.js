@@ -1,9 +1,11 @@
+import debounce from "./debouncedScroll.js";
+
 export default class AnimatedScroll {
   constructor(section) {
     this.sections = document.querySelectorAll(section);
     this.windowHeight = window.innerHeight * 0.6;
     //bind pra nao referenciar errado
-    this.scrollSmooth = this.scrollSmooth.bind(this);
+    this.scrollSmooth = debounce(this.scrollSmooth.bind(this), 200);
   }
 
   scrollSmooth() {

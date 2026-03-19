@@ -33,5 +33,4 @@ import initFuncionamento from "./modules/funcionamento.js";
 initFuncionamento();
 
 import FetchAnimais from "./modules/fetchAnimais.js";
-const fetchAnimais = new FetchAnimais();
-fetchAnimais.init();
+FetchAnimais();
