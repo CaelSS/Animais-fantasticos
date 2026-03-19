@@ -27,8 +27,9 @@ import DropDown from "./modules/dropDown.js";
 const menu = new DropDown('[data-dropdown]');
 menu.init();
 
-import initMenuMobile from "./modules/menu-mobile.js";
-initMenuMobile();
+import MenuMobile from "./modules/menu-mobile.js";
+const menuDropMobile = new MenuMobile('[data-menu="button"]','[data-menu="list"]' );
+menuDropMobile.init();
 
 import initFuncionamento from "./modules/funcionamento.js";
 initFuncionamento();
