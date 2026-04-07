@@ -1,3 +1,6 @@
+import FetchAnimais from "./modules/fetchAnimais.js";
+FetchAnimais();
+
 import AnimatedScroll from "./modules/animatedScroll.js";
 const animationScroll = new AnimatedScroll('[data-anime="scroll"]');
 animationScroll.init();
@@ -32,7 +35,7 @@ const menuDropMobile = new MenuMobile('[data-menu="button"]','[data-menu="list"]
 menuDropMobile.init();
 
 import initFuncionamento from "./modules/funcionamento.js";
+const funcionamento = new funcionamento();
 initFuncionamento();
 
-import FetchAnimais from "./modules/fetchAnimais.js";
-FetchAnimais();
+
