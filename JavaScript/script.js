@@ -34,8 +34,9 @@ import MenuMobile from "./modules/menu-mobile.js";
 const menuDropMobile = new MenuMobile('[data-menu="button"]','[data-menu="list"]' );
 menuDropMobile.init();
 
-import initFuncionamento from "./modules/funcionamento.js";
-const funcionamento = new funcionamento();
-initFuncionamento();
+import funcionamento from "./modules/funcionamento.js";
+const funcionamentoHora = new funcionamento("[data-semana]", "aberto");
+console.log(funcionamentoHora);
+funcionamentoHora.init();
 
 
