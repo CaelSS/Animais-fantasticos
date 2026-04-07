@@ -36,7 +36,6 @@ menuDropMobile.init();
 
 import funcionamento from "./modules/funcionamento.js";
 const funcionamentoHora = new funcionamento("[data-semana]", "aberto");
-console.log(funcionamentoHora);
 funcionamentoHora.init();
 
 
