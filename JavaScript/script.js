@@ -1,3 +1,6 @@
+import FetchAnimais from "./modules/fetchAnimais.js";
+FetchAnimais();
+
 import AnimatedScroll from "./modules/animatedScroll.js";
 const animationScroll = new AnimatedScroll('[data-anime="scroll"]');
 animationScroll.init();
@@ -31,8 +34,9 @@ import MenuMobile from "./modules/menu-mobile.js";
 const menuDropMobile = new MenuMobile('[data-menu="button"]','[data-menu="list"]' );
 menuDropMobile.init();
 
-import initFuncionamento from "./modules/funcionamento.js";
-initFuncionamento();
+import funcionamento from "./modules/funcionamento.js";
+const funcionamentoHora = new funcionamento("[data-semana]", "aberto");
+console.log(funcionamentoHora);
+funcionamentoHora.init();
 
-import FetchAnimais from "./modules/fetchAnimais.js";
-FetchAnimais();
+
