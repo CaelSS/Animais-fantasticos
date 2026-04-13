@@ -3,6 +3,7 @@
 @import url(../CSS/tooltip.css);
 @import url(../CSS/dropdown.css);
 @import url(../CSS/menuMobile.css);
+@import url(../CSS/style-slide.css);
 :root {
     --background-cor: #faf6ed;
     --cor-preta: #222;

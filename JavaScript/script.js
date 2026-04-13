@@ -38,4 +38,8 @@ import funcionamento from "./modules/funcionamento.js";
 const funcionamentoHora = new funcionamento("[data-semana]", "aberto");
 funcionamentoHora.init();
 
-
+//------SCRIPT DO SLIDE-----------------
+import {SlideNav} from "./modules/slide.js";
+const slide = new SlideNav(".slide", ".wrapper");
+slide.init();
+slide.addControl(".custom-control");
